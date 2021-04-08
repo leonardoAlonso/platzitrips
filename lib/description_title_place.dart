@@ -14,8 +14,8 @@ class DescriptionTitlePlace extends StatelessWidget {
   Widget build(BuildContext context) {
     final placeDescription = Column(
       children: <Widget>[
-        new TitlePlace(namePlace, punctuation),
-        new DescriptionPlace(descriptionPlace)
+        TitlePlace(namePlace, punctuation),
+        DescriptionPlace(descriptionPlace)
       ],
     );
     return placeDescription;

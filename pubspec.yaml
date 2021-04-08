@@ -76,6 +76,10 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/img/descarga.jfif
+    - assets/img/place_one.jpg
+    - assets/img/place_two.jpg
+    - assets/img/place_three.jpg
+    - assets/img/place_four.jpg
 
   fonts:
     - family: Lato

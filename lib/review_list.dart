@@ -11,11 +11,12 @@ class ReviewList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        new Review(pathImage, name, details, coments),
-        new Review(pathImage, name, details, coments),
-        new Review(pathImage, name, details, coments),
-        new Review(pathImage, name, details, coments)
+        Review(pathImage, name, details, coments),
+        Review(pathImage, name, details, coments),
+        Review(pathImage, name, details, coments),
+        Review(pathImage, name, details, coments)
       ],
     );
   }

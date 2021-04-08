@@ -28,11 +28,7 @@ class TitlePlace extends StatelessWidget {
             textAlign: TextAlign.left,
           )
         ),
-        Row(
-          children: <Widget>[
-            new Stars(punctuation)
-          ],
-        ),
+        Stars(punctuation, 323.0, 3.0, 25.0),
       ],
     );
     return titleStars;

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'description_title_place.dart';
 import 'review_list.dart';
+import 'header_appbar.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,21 +26,33 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Hola mundo!")
-        ),
-        body: Column(
+        body: Stack(
           children: <Widget>[
-            Center(
-              child: new DescriptionTitlePlace(
-                "Bahamas",
-                4,
-                "Consequat anim nulla ad pariatur ea adipisicing ad proident laborum."
-              ),
+            ListView(
+              children: <Widget>[
+                DescriptionTitlePlace(
+                  "Bahamas",
+                  4,
+                  "Consequat anim nulla ad pariatur ea adipisicing ad proident laborum. Id amet veniam ullamco aute in cillum sit labore eu dolor ullamco excepteur. Commodo pariatur velit aute non ut culpa commodo exercitation."
+                ),
+                ReviewList()
+              ],
             ),
-            new ReviewList()
+            HeaderAppBar(),
           ],
         )
+        // body: Column(
+        //   children: <Widget>[
+        //     Center(
+        //       child: DescriptionTitlePlace(
+        //         "Bahamas",
+        //         4,
+        //         "Consequat anim nulla ad pariatur ea adipisicing ad proident laborum."
+        //       ),
+        //     ),
+        //     ReviewList()
+        //   ],
+        // )
       )
     );
   }
