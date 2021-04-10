@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'description_title_place.dart';
-import 'review_list.dart';
-import 'header_appbar.dart';
+import 'package:platizitrips/platzi_trips.dart';
+import 'package:platizitrips/platzi_trips_cupertino.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,35 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        body: Stack(
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionTitlePlace(
-                  "Bahamas",
-                  4,
-                  "Consequat anim nulla ad pariatur ea adipisicing ad proident laborum. Id amet veniam ullamco aute in cillum sit labore eu dolor ullamco excepteur. Commodo pariatur velit aute non ut culpa commodo exercitation."
-                ),
-                ReviewList()
-              ],
-            ),
-            HeaderAppBar(),
-          ],
-        )
-        // body: Column(
-        //   children: <Widget>[
-        //     Center(
-        //       child: DescriptionTitlePlace(
-        //         "Bahamas",
-        //         4,
-        //         "Consequat anim nulla ad pariatur ea adipisicing ad proident laborum."
-        //       ),
-        //     ),
-        //     ReviewList()
-        //   ],
-        // )
-      )
+      home: PlatziTripsCupertino()
     );
   }
 }
