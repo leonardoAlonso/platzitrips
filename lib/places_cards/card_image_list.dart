@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'cardImage.dart';
+import '../places_cards/cardImage.dart';
 
 class CardImageList extends StatelessWidget {
   CardImageList();
